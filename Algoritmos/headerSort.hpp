@@ -23,15 +23,44 @@ OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U
 OTROS ACUERDOS EN EL SOFTWARE.
 */
 
+/**
+ * @file headerSort.hpp
+ * Este archivo contiene las declaraciones de cuatro funciones de ordenamiento:
+ * Bubble Sort
+ * Selection Sort
+ * Insertion Sort
+ * Quick Sort
+*/
 #ifndef HEADER_SORT_HPP
-#def HEADER_SORT_HPP
+#define HEADER_SORT_HPP
 
+/**
+ * @brief Se ordena un arreglo de enteros usando el algoritmo Bubble Sort.
+ * @param arr El arreglo de enteros que se desea ordenar.
+ * @param n El tamano del arreglo a ordenar.
+*/
 void bubbleSort(int arr[], int n);
 
+/**
+ * @brief Se ordena un arreglo de enteros usando el algoritmo Selection Sort.
+ * @param arr El arreglo de enteros que se desea ordenar.
+ * @param n El tamano del arreglo a ordenar.
+*/
 void selectionSort(int arr[], int n);
 
+/**
+ * @brief Se ordena un arreglo de enteros usando el algoritmo Insertion Sort.
+ * @param arr El arreglo de enteros que se desea ordenar.
+ * @param n El tamano del arreglo a ordenar.
+*/
 void insertionSort(int arr[], int n);
 
+/**
+ * @brief Se ordena un arreglo de enteros usando el algoritmo Quick Sort.
+ * @param arr El arreglo de enteros que se desea ordenar.
+ * @param low Representa el indice mas bajo del arreglo.
+ * @param high Representa el indice mas alto del arreglo.
+*/
 void quickSort(int arr[], int low, int high);
 
 #endif /* HEADER_SORT_HPP */
