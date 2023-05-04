@@ -1,6 +1,6 @@
 # Analisis de complejidad de los algoritmos de ordenamiento Bubble Sort, Selection Sort, Insertion Sort y Quick Sort:
 
-1. Bubble Sort:
+## 1. Bubble Sort:
 
 El algoritmo de ordenamiento Bubble Sort tiene una complejidad O(n^2) en el peor de los casos, donde n es el número de elementos a ordenar.
 
@@ -8,7 +8,7 @@ Esto se debe a que el algoritmo compara cada elemento con todos los demás eleme
 
 Por lo tanto, la complejidad del algoritmo de ordenamiento Bubble Sort es O(n^2).
 
-2. Selection Sort:
+## 2. Selection Sort:
 
 El algoritmo de ordenamiento Selection Sort tiene una complejidad O(n^2) en el peor de los casos, donde n es el número de elementos a ordenar.
 
@@ -16,7 +16,7 @@ Esto se debe a que el algoritmo recorre todo el arreglo en busca del elemento m�
 
 Por lo tanto, la complejidad del algoritmo de ordenamiento Selection Sort es O(n^2).
 
-3. Insertion Sort:
+## 3. Insertion Sort:
 
 El algoritmo de ordenamiento Insertion Sort tiene una complejidad O(n^2) en el peor de los casos, donde n es el número de elementos a ordenar.
 
@@ -24,7 +24,7 @@ Esto se debe a que el algoritmo recorre todo el arreglo y compara cada elemento 
 
 Por lo tanto, la complejidad del algoritmo de ordenamiento Insertion Sort es O(n^2).
 
-4. Quick Sort:
+## 4. Quick Sort:
 
 El algoritmo de ordenamiento Quick Sort tiene una complejidad O(n^2) en el peor de los casos, donde n es el número de elementos a ordenar.
 
