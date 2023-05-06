@@ -169,5 +169,5 @@ Con esto se eliminan los archivos ejecutables de la carpeta build.
 
 
 # Nota:
-El código fue realizado en windwos, se trata de generalizar la ejecución de los archivos en la tarea.
+El código fue realizado en windows, se trata de generalizar la ejecución de los archivos en la tarea.
 Puede ser necesario agregar el .o o el .exe en los ejecutables.
