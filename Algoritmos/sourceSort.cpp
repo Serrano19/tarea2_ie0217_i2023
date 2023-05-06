@@ -24,8 +24,8 @@ OTROS ACUERDOS EN EL SOFTWARE.
 */
 
 /**
- * @file main.cpp
- * @brief El programa contiene la imolementacion de distintos algoritmos de ordenamiento.
+ * @file sourceSort.cpp
+ * @brief El programa contiene la implementacion de distintos algoritmos de ordenamiento.
  * El programa ordena un arreglo de numeros enteros utilizando:
  * Bubble Sort
  * Selection Sort
@@ -122,24 +122,4 @@ void quickSort(int arr[], int low, int high) {
         quickSort(arr, low, pi-1);
         quickSort(arr, pi+1, high);
     }
-}
-
-/**
- * @brief La funcion main llama los los algoritmos de ordenamiento e imprime el arreglo ordenado.
- * @return 0 si el programa es ejecutado correctamente.
-*/
-int main() {
-    int arr[] = {112, 791, 635, 995, 113, 228, 213, 663, 485, 904, 133, 337, 533, 895, 534, 270, 212,
-    345, 622, 382, 955, 539, 67, 453, 519, 193, 226, 405, 854, 612, 53, 570, 467, 42}; /** El arreglo que se desea ordenar. */
-    int n = sizeof(arr)/sizeof(arr[0]); /** Se calcula la cantidad de elementos en el arreglo. */
-    bubbleSort(arr, n); /** Se llama la funcion bubbleSort para ordenar el arreglo. */
-    selectionSort(arr, n); /** Se llama la funcion selectionSort para ordenar el arreglo. */
-    insertionSort(arr, n); /** Se llama la funcion insertionSort para ordenar el arreglo. */
-    quickSort(arr, 0, n-1); /** Se llama la funcion quickSort para ordenar el arreglo. */
-    std::cout << "Sorted array: ";
-    for (int i = 0; i < n; i++) { /** Bucle for para imprimir en pantalla el arreglo rodenado. */
-        std::cout << arr[i] << " ";
-    }
-    std::cout << std::endl;
-    return 0;
 }
