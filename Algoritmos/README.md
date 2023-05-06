@@ -113,7 +113,7 @@ make clean
 En caso de utilizar windows, ingrese el siguiente comando:
 
 ```bash
-mingw32-make TestQuickSort
+mingw32-make clean
 ```
 
 Si el comando no funciona por algun error, puede utilizar el siguiente comando:
