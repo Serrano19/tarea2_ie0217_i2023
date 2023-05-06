@@ -23,6 +23,11 @@ OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U
 OTROS ACUERDOS EN EL SOFTWARE.
 */
 
+/**
+ * @file MyException.hpp
+ * Declaracion de la clase MyException.
+*/
+
 #ifndef MY_EXCEPTION_HPP
 #define MY_EXCEPTION_HPP
 
@@ -30,7 +35,7 @@ OTROS ACUERDOS EN EL SOFTWARE.
 
 /**
  * @brief Clase MyException que hereda de std::exception.
- * Esta clase define una excepción personalizada que puede ser lanzada
+ * @brief Esta clase define una excepción personalizada que puede ser lanzada
  * dentro de una función.
 */
 class MyException : public std::exception {

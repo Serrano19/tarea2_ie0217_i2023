@@ -25,8 +25,9 @@ OTROS ACUERDOS EN EL SOFTWARE.
 
 /**
  * @file MyException.cpp
- * Implementación de la clase MyException.
+ * @brief Implementación de la clase MyException.
 */
+
 #include "MyException.hpp" /** Incluye el header que contiene la declaración de la clase MyException.*/
 
 /**

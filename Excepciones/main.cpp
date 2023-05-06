@@ -23,6 +23,11 @@ OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U
 OTROS ACUERDOS EN EL SOFTWARE.
 */
 
+/**
+ * @file main.cpp
+ * @brief Programa principal que lanza y captura la excepcion de la clase MyException.
+*/
+
 #include <iostream>
 #include "MyException.hpp"
 
