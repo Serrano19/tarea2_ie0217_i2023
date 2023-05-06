@@ -42,15 +42,15 @@ Se realizan las cuatro implementaciones de los algoritmos de ordenamiento: Bubbl
 
 Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
 
-'''bash
+```bash
 make TestBubbleSort
-'''
+```
 
 En caso de utilizar windows, ingrese el siguiente comando:
 
-'''bash
+```bash
 mingw32-make TestBubbleSort
-'''
+```
 
 Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Bubble Sort y seguidamente ejecuta el archivo creado en la carpeta build.
 
@@ -58,15 +58,15 @@ Con este comando se compilan los archivos necesarios para ver la implementacion 
 
 Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
 
-'''bash
+```bash
 make TestSelectionSort
-'''
+```
 
 En caso de utilizar windows, ingrese el siguiente comando:
 
-'''bash
+```bash
 mingw32-make TestSelectionSort
-'''
+```
 
 Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Selection Sort y seguidamente ejecuta el archivo creado en la carpeta build.
 
@@ -74,15 +74,15 @@ Con este comando se compilan los archivos necesarios para ver la implementacion 
 
 Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
 
-'''bash
+```bash
 make TestInsertionSort
-'''
+```
 
 En caso de utilizar windows, ingrese el siguiente comando:
 
-'''bash
+```bash
 mingw32-make TestInsertionSort
-'''
+```
 
 Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Insertion Sort y seguidamente ejecuta el archivo creado en la carpeta build.
 
@@ -90,15 +90,15 @@ Con este comando se compilan los archivos necesarios para ver la implementacion 
 
 Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
 
-'''bash
+```bash
 make TestQuickSort
-'''
+```
 
 En caso de utilizar windows, ingrese el siguiente comando:
 
-'''bash
+```bash
 mingw32-make TestQuickSort
-'''
+```
 
 Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Quick Sort y seguidamente ejecuta el archivo creado en la carpeta build.
 
@@ -106,20 +106,20 @@ Con este comando se compilan los archivos necesarios para ver la implementacion 
 
 Para eliminar los ejecutables creados durante la compilacion y ejecucion de los programas, debe estar ubicado en la carpeta Algoritmos y ejecutar el sigiente comando:
 
-'''bash
+```bash
 make clean
-'''
+```
 
 En caso de utilizar windows, ingrese el siguiente comando:
 
-'''bash
+```bash
 mingw32-make TestQuickSort
-'''
+```
 
 Si el comando no funciona por algun error, puede utilizar el siguiente comando:
 
-'''bash
+```bash
 rm .\build\*
-'''
+```
 
 Con esto se eliminan los archivos ejecutables de la carpeta build.
