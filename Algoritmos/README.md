@@ -1,4 +1,4 @@
-# Analisis de complejidad de los algoritmos de ordenamiento Bubble Sort, Selection Sort, Insertion Sort y Quick Sort:
+## Analisis de complejidad de los algoritmos de ordenamiento Bubble Sort, Selection Sort, Insertion Sort y Quick Sort:
 
 ## 1. Bubble Sort:
 
@@ -34,4 +34,92 @@ En el peor de los casos, donde el pivote elegido siempre es el elemento más gra
 
 Por lo tanto, la complejidad del algoritmo de ordenamiento Quick Sort es O(n^2).
 
-5. En el archivo fuente llamado sourceSort.cpp se crea una función main para realizar pruebas de los distintos algoritmos de ordenamiento.
+## 5. Como usar los códigos:
+
+Se realizan las cuatro implementaciones de los algoritmos de ordenamiento: Bubble Sort, Selection Sort, Insertion Sort y Quick Sort.
+
+# 1. Para probar el algoritmo de control Bubble Sort:
+
+Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
+
+'''bash
+make TestBubbleSort
+'''
+
+En caso de utilizar windows, ingrese el siguiente comando:
+
+'''bash
+mingw32-make TestBubbleSort
+'''
+
+Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Bubble Sort y seguidamente ejecuta el archivo creado en la carpeta build.
+
+# 2. Para probar el algoritmo de control Selection Sort:
+
+Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
+
+'''bash
+make TestSelectionSort
+'''
+
+En caso de utilizar windows, ingrese el siguiente comando:
+
+'''bash
+mingw32-make TestSelectionSort
+'''
+
+Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Selection Sort y seguidamente ejecuta el archivo creado en la carpeta build.
+
+# 3. Para probar el algoritmo de control Insertion Sort:
+
+Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
+
+'''bash
+make TestInsertionSort
+'''
+
+En caso de utilizar windows, ingrese el siguiente comando:
+
+'''bash
+mingw32-make TestInsertionSort
+'''
+
+Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Insertion Sort y seguidamente ejecuta el archivo creado en la carpeta build.
+
+# 4. Para probar el algoritmo de control Quick Sort:
+
+Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
+
+'''bash
+make TestQuickSort
+'''
+
+En caso de utilizar windows, ingrese el siguiente comando:
+
+'''bash
+mingw32-make TestQuickSort
+'''
+
+Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Quick Sort y seguidamente ejecuta el archivo creado en la carpeta build.
+
+# 5. Eliminar los ejecutables de la carpeta build:
+
+Para eliminar los ejecutables creados durante la compilacion y ejecucion de los programas, debe estar ubicado en la carpeta Algoritmos y ejecutar el sigiente comando:
+
+'''bash
+make clean
+'''
+
+En caso de utilizar windows, ingrese el siguiente comando:
+
+'''bash
+mingw32-make TestQuickSort
+'''
+
+Si el comando no funciona por algun error, puede utilizar el siguiente comando:
+
+'''bash
+rm .\build\*
+'''
+
+Con esto se eliminan los archivos ejecutables de la carpeta build.
