@@ -54,6 +54,16 @@ mingw32-make TestBubbleSort
 
 Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Bubble Sort y seguidamente ejecuta el archivo creado en la carpeta build.
 
+En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
+
+```bash
+g++ sourceSort.cpp TestBubbleSort.cpp -o .\build\TestBubbleSort
+```
+
+```bash
+.\build\TestBubbleSort
+```
+
 # 2. Para probar el algoritmo de control Selection Sort:
 
 Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
@@ -69,6 +79,16 @@ mingw32-make TestSelectionSort
 ```
 
 Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Selection Sort y seguidamente ejecuta el archivo creado en la carpeta build.
+
+En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
+
+```bash
+g++ sourceSort.cpp TestSelectionSort.cpp -o .\build\TestSelectionSort
+```
+
+```bash
+.\build\TestSelectionSort
+```
 
 # 3. Para probar el algoritmo de control Insertion Sort:
 
@@ -86,6 +106,16 @@ mingw32-make TestInsertionSort
 
 Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Insertion Sort y seguidamente ejecuta el archivo creado en la carpeta build.
 
+En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
+
+```bash
+g++ sourceSort.cpp TestInsertionSort.cpp -o .\build\TestInsertionSort
+```
+
+```bash
+.\build\TestInsertionSort
+```
+
 # 4. Para probar el algoritmo de control Quick Sort:
 
 Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
@@ -102,6 +132,16 @@ mingw32-make TestQuickSort
 
 Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Quick Sort y seguidamente ejecuta el archivo creado en la carpeta build.
 
+En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
+
+```bash
+g++ sourceSort.cpp TestQuickSort.cpp -o .\build\TestQuickSort
+```
+
+```bash
+.\build\TestQuickSort
+```
+
 # 5. Eliminar los ejecutables de la carpeta build:
 
 Para eliminar los ejecutables creados durante la compilacion y ejecucion de los programas, debe estar ubicado en la carpeta Algoritmos y ejecutar el sigiente comando:
@@ -116,7 +156,7 @@ En caso de utilizar windows, ingrese el siguiente comando:
 mingw32-make clean
 ```
 
-Si el comando no funciona por algun error, puede utilizar el siguiente comando:
+En caso de fallar en Makefile creado, ejecutar el siguiente comando:
 
 ```bash
 rm .\build\*
