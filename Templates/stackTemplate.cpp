@@ -23,22 +23,42 @@ OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U
 OTROS ACUERDOS EN EL SOFTWARE.
 */
 
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <stdexcept>
-#include <functional>
+/**
+ * @file stackTemplate.cpp
+ * El archivo tiene una implementación de una estructura de datos de pilas usando plantillas.
+ * Esta clase pila contiene operaciones básicas como push, pop, clear, empty, size y foreach.
+*/
+#include <iostream> /** Necesario para entrada/salida estándar.*/
+#include <vector> /** Necesario para implementar la estructura de datos de tipo vector (se utiliza para implementar la pila).*/
+#include <algorithm> /** Necesario para utilizar la función std::for_each.*/
+#include <stdexcept>  /** Necesario para lanzar excepciones como std::out_of_range de la función pop.*/
+#include <functional> /** Necesario para utilizar std::function de la función foreach.*/
 
+/**
+ * @brief La clase se implementa utilizando un vector para almacenar los datos.
+ * La clase tiene una plantilla para admitir elementos de cualquier tipo de datos.
+*/
 template<typename T>
 class Stack {
 private:
   std::vector<T> data_;
 
 public:
+
+/**
+ * @brief Agrega un elemento en la parte superior de la pila.
+ * @param value El valor del elemento que se agrega en la pila.
+*/
   void push(T value) {
     data_.push_back(value);
   }
 
+/**
+ * @brief Elimina y retorna el elemento superior de la pila.
+ * Si la pila se encuentra vacía, la función lanza la excepción out_of_range.
+ * @return El elemento superior de la pila.
+ * @throw out_of_range si la pila se encuentra vacía.
+*/
   T pop() {
     if (data_.empty()) {
       throw std::out_of_range("Stack is empty");
@@ -48,43 +68,67 @@ public:
     return value;
   }
 
+/**
+ * @brief Elimina todos los elementos de la pila.
+*/
   void clear() {
     data_.clear();
   }
 
+/**
+ * @brief Retorna true si la pila se encuentra vacía.
+ * @return true si la pila se encuentra vacía y false si no está vacía.
+*/
   bool empty() const {
     return data_.empty();
   }
 
+/**
+ * @brief Retorna la cantidad de elementos que contiene la pila.
+ * @return Número de elementos que hay en la pila.
+*/
   std::size_t size() const {
     return data_.size();
   }
 
+/**
+ * @brief Se aplica una función a cada elemento de la pila.
+ * Aplica la función dada a cada elemento de la pila usando for_each.
+ * @param func La función que se aplicará a cada elemento de la pila.
+*/
   void foreach(const std::function<void(T&)>& func) {
     std::for_each(data_.begin(), data_.end(), func);
   }
 };
 
+/**
+ * @brief El programa crea una pila de enteros, inserta tres valores en la pila, imprime el
+ * tamaño de la pila y luego usa una función foreach para imprimir cada valor en la pila.
+ * Luego procede a extraer todos los valores de la pila usando un bucle while,
+ * imprimiendo cada valor emergente. Finalmente, imprime el tamaño de la pila después
+ * de que se hayan extraído todos los valores.
+ * @return int Devuelve 0 al completar con éxito el programa.
+*/
 int main() {
-  Stack<int> s;
-  s.push(2021);
-  s.push(2054);
-  s.push(6524);
+  Stack<int> s; /** Crea un objeto pila de tipo entero.*/
+  s.push(2021); /** Se inserta el primer valor en la pila.*/
+  s.push(2054); /** Se inserta el segundo valor en la pila.*/
+  s.push(6524); /** Se inserta el tercer valor en la pila.*/
 
-  std::cout << "Stack size: " << s.size() << std::endl;
+  std::cout << "Stack size: " << s.size() << std::endl; /** Imprime en pantalla la cantidad de elementos en la pila.*/
 
-  s.foreach([](int& value) {
+  s.foreach([](int& value) { /** Aplica la función a cada elemento de la pila, imprimiendo cada valor en pantalla.*/
     std::cout << "Value: " << value << std::endl;
   });
 
-  try {
-    while (!s.empty()) {
-      int value = s.pop();
-      std::cout << "Popped value: " << value << std::endl;
+  try {/** Con un bloque try-catch se captura cualquier excepción que pueda generar la función pop().*/
+    while (!s.empty()) { /** Se extraen todos los elementos de la pila hasta que quede vacía.*/
+      int value = s.pop(); /** Extrae el elemento superior de la pila y lo almacena en la variable value.*/
+      std::cout << "Popped value: " << value << std::endl; /** Imprime el valor almacenado en value.*/
     }
-    std::cout << "Stack size: " << s.size() << std::endl;
-  } catch (const std::exception& e) {
-    std::cerr << "Exception: " << e.what() << std::endl;
+    std::cout << "Stack size: " << s.size() << std::endl; /** Imprime el tamaño de la pila despues de eliminar los valores de la misma.*/
+  } catch (const std::exception& e) { /** Captura cualquier excepción lanzada por la función pop().*/
+    std::cerr << "Exception: " << e.what() << std::endl; /** Imprime el mensaje de error de la excepción capturada en pantalla.*/
   }
 
   return 0;
