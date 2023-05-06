@@ -130,6 +130,31 @@ int main() {
   } catch (const std::exception& e) { /** Captura cualquier excepción lanzada por la función pop().*/
     std::cerr << "Exception: " << e.what() << std::endl; /** Imprime el mensaje de error de la excepción capturada en pantalla.*/
   }
+  
+  std::cout << std::endl << "Nueva instancia con otro tipo de variable." << std::endl << std::endl; /** Impresión en pantalla para separar instancias.*/
+
+  Stack<std::string> s2; /** Crea un objeto pila de tipo string.*/
+  s2.push("!"); /** Se inserta el primer valor en la pila.*/
+  s2.push("Mundo"); /** Se inserta el segundo valor en la pila.*/
+  s2.push("Hola"); /** Se inserta el tercer valor en la pila.*/
+
+  std::cout << "Stack size: " << s2.size() << std::endl; /** Imprime en pantalla la cantidad de elementos en la pila.*/
+
+  s2.foreach([](std::string& value) { /** Aplica la función a cada elemento de la pila, imprimiendo cada valor en pantalla.*/
+    std::cout << "Value: " << value << std::endl;
+  });
+      
+  try { /** Con un bloque try-catch se captura cualquier excepción que pueda generar la función pop().*/
+    while (!s2.empty()) { /** Se extraen todos los elementos de la pila hasta que quede vacía.*/
+
+      std::string value = s2.pop(); /** Extrae el elemento superior de la pila y lo almacena en la variable value.*/
+      std::cout << "Popped value: " << value << std::endl; /** Imprime el valor almacenado en value.*/
+    }
+    std::cout << "Stack size: " << s2.size() << std::endl << std::endl; /** Imprime el tamaño de la pila despues de eliminar los valores de la misma.*/
+//    s2.pop();
+  } catch (const std::exception& e) { /** Captura cualquier excepción lanzada por la función pop().*/
+    std::cerr << "Exception: " << e.what() << std::endl; /** Imprime el mensaje de error de la excepción capturada en pantalla.*/
+  }
 
   return 0;
 }
