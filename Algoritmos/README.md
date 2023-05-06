@@ -34,7 +34,9 @@ En el peor de los casos, donde el pivote elegido siempre es el elemento más gra
 
 Por lo tanto, la complejidad del algoritmo de ordenamiento Quick Sort es O(n^2).
 
-## Como usar los códigos:
+
+
+# Como usar los códigos:
 
 Se realizan las cuatro implementaciones de los algoritmos de ordenamiento: Bubble Sort, Selection Sort, Insertion Sort y Quick Sort.
 
