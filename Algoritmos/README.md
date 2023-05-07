@@ -40,9 +40,9 @@ Por lo tanto, la complejidad del algoritmo de ordenamiento Quick Sort es O(n^2).
 
 Se realizan las cuatro implementaciones de los algoritmos de ordenamiento: Bubble Sort, Selection Sort, Insertion Sort y Quick Sort.
 
-# 1. Para probar el algoritmo de control Bubble Sort:
+# 1. Para probar el algoritmo de ordenamiento Bubble Sort:
 
-Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
+1. Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
 
 ```bash
 make TestBubbleSort
@@ -56,7 +56,7 @@ mingw32-make TestBubbleSort
 
 Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Bubble Sort y seguidamente ejecuta el archivo creado en la carpeta build.
 
-En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
+2. En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
 
 ```bash
 g++ sourceSort.cpp TestBubbleSort.cpp -o .\build\TestBubbleSort
@@ -66,9 +66,9 @@ g++ sourceSort.cpp TestBubbleSort.cpp -o .\build\TestBubbleSort
 .\build\TestBubbleSort
 ```
 
-# 2. Para probar el algoritmo de control Selection Sort:
+# 2. Para probar el algoritmo de ordenamiento Selection Sort:
 
-Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
+1. Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
 
 ```bash
 make TestSelectionSort
@@ -82,7 +82,7 @@ mingw32-make TestSelectionSort
 
 Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Selection Sort y seguidamente ejecuta el archivo creado en la carpeta build.
 
-En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
+2. En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
 
 ```bash
 g++ sourceSort.cpp TestSelectionSort.cpp -o .\build\TestSelectionSort
@@ -92,9 +92,9 @@ g++ sourceSort.cpp TestSelectionSort.cpp -o .\build\TestSelectionSort
 .\build\TestSelectionSort
 ```
 
-# 3. Para probar el algoritmo de control Insertion Sort:
+# 3. Para probar el algoritmo de ordenamiento Insertion Sort:
 
-Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
+1. Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
 
 ```bash
 make TestInsertionSort
@@ -108,7 +108,7 @@ mingw32-make TestInsertionSort
 
 Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Insertion Sort y seguidamente ejecuta el archivo creado en la carpeta build.
 
-En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
+2. En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
 
 ```bash
 g++ sourceSort.cpp TestInsertionSort.cpp -o .\build\TestInsertionSort
@@ -118,9 +118,9 @@ g++ sourceSort.cpp TestInsertionSort.cpp -o .\build\TestInsertionSort
 .\build\TestInsertionSort
 ```
 
-# 4. Para probar el algoritmo de control Quick Sort:
+# 4. Para probar el algoritmo de ordenamiento Quick Sort:
 
-Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
+1. Ubicado en la carpeta de Algoritmos, ejecute el siguiente comando:
 
 ```bash
 make TestQuickSort
@@ -134,7 +134,7 @@ mingw32-make TestQuickSort
 
 Con este comando se compilan los archivos necesarios para ver la implementacion del algoritmo de control Quick Sort y seguidamente ejecuta el archivo creado en la carpeta build.
 
-En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
+2. En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
 
 ```bash
 g++ sourceSort.cpp TestQuickSort.cpp -o .\build\TestQuickSort
@@ -146,7 +146,7 @@ g++ sourceSort.cpp TestQuickSort.cpp -o .\build\TestQuickSort
 
 # 5. Eliminar los ejecutables de la carpeta build:
 
-Para eliminar los ejecutables creados durante la compilacion y ejecucion de los programas, debe estar ubicado en la carpeta Algoritmos y ejecutar el sigiente comando:
+1. Para eliminar los ejecutables creados durante la compilacion y ejecucion de los programas, debe estar ubicado en la carpeta Algoritmos y ejecutar el sigiente comando:
 
 ```bash
 make clean
@@ -158,7 +158,7 @@ En caso de utilizar windows, ingrese el siguiente comando:
 mingw32-make clean
 ```
 
-En caso de fallar en Makefile creado, ejecutar el siguiente comando:
+2. En caso de fallar en Makefile creado, ejecutar el siguiente comando:
 
 ```bash
 rm .\build\*
@@ -170,4 +170,4 @@ Con esto se eliminan los archivos ejecutables de la carpeta build.
 
 # Nota:
 El código fue realizado en windows, se trata de generalizar la ejecución de los archivos en la tarea.
-Puede ser necesario agregar el .o o el .exe en los ejecutables.
+Puede ser necesario agregar el .exe o el .o en la creación de los ejecutables.

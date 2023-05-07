@@ -110,7 +110,7 @@ g++ DisparoExcepcion3.cpp -o .\build\DisparoExcepcion3
 
 # 5. Eliminar los ejecutables de la carpeta build:
 
-Para eliminar los ejecutables creados durante la compilación y ejecución de los programas, debe estar ubicado en la carpeta Excepciones y ejecutar el sigiente comando:
+1. Para eliminar los ejecutables creados durante la compilación y ejecución de los programas, debe estar ubicado en la carpeta Excepciones y ejecutar el sigiente comando:
 
 ```bash
 make clean
@@ -122,7 +122,7 @@ En caso de utilizar windows, ingrese el siguiente comando:
 mingw32-make clean
 ```
 
-En caso de fallar en Makefile creado, ejecutar el siguiente comando:
+2. En caso de fallar en Makefile creado, ejecutar el siguiente comando:
 
 ```bash
 rm .\build\*

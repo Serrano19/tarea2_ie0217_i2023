@@ -9,7 +9,7 @@ Todos los includes en el código del archivo stackTemplate son necesarios.
 5. functional: se utiliza para proporcionar el tipo de datos std::function, que se utiliza para pasar una función como argumento en el método foreach.
 
 
-# Como usar el códigos:
+# Como usar los códigos:
 
 Se realiza la implementación del código stackTemplate, donde se agrega una nueva instancia donde se utiliza el template pero con otro tipo de datos, en ese caso con datos tipo string.
 
@@ -27,7 +27,7 @@ En caso de utilizar windows, ingrese el siguiente comando:
 mingw32-make stackTemplate
 ```
 
-Con este comando se compilan los archivos necesarios para ver la implementacion del template y seguidamente se ejecuta el archivo creado en la carpeta build.
+Con este comando se compilan los archivos necesarios para ver la implementación del template y seguidamente se ejecuta el archivo creado en la carpeta build.
 
 2. En caso de fallar en Makefile creado, ejecutar los siguientes comandos:
 
@@ -68,7 +68,7 @@ En la línea de codigo 154 se encuentra comentada la instrucción que dispara la
 
 Para probar como se dispara la excepción debe descomentar la línea 154 como se muestra a continuación:
 
-1. Línea 154 comentada ```bash //   s2.pop(); ```:
+1. Línea 154 comentada ```//   s2.pop(); ```:
 
 ```c++
   try { /** Con un bloque try-catch se captura cualquier excepción que pueda generar la función pop().*/
@@ -84,7 +84,7 @@ Para probar como se dispara la excepción debe descomentar la línea 154 como se
   }
 ```
 
-2. Línea 154 descomentada ```bash    s2.pop(); ```:
+2. Línea 154 descomentada ```    s2.pop(); ```:
 
 ```c++
   try { /** Con un bloque try-catch se captura cualquier excepción que pueda generar la función pop().*/
@@ -109,4 +109,4 @@ Para probar como se dispara la excepción debe descomentar la línea 154 como se
 
 # Nota:
 El código fue realizado en windows, se trata de generalizar la ejecución de los archivos en la tarea.
-Puede ser necesario agregar el .o o el .exe en los ejecutables.
+Puede ser necesario agregar el .exe o el .o en la creación de los ejecutables.
